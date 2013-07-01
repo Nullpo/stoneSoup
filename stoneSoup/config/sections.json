@@ -1,0 +1,94 @@
+[
+   {
+      "id":1,
+      "name":"Splash image",
+      "image":"banner.jpg",
+      "type":"image",
+      "controller":null,
+      "innerName":"splashScreen"
+   },
+   {
+      "id":2,
+      "name":"Agile Open Buenos Aires Seguridad 2013",
+      "views":[
+         "initialText.mustache"
+      ],
+      "type":"htmlTemplate",
+      "controller":null,
+      "innerName":"generalDescription"
+   },
+   {
+      "id":3,
+      "name":"Charlas actuales",
+      "views":[
+         "talkHref.mustache",
+         "talkPages.mustache"
+      ],
+      "comments":[false],
+      "type":"list",
+      "controller":"querys/talks.php?q=now",
+      "innerName":"actualTalks"
+   },
+   {
+      "id":4,
+      "name":"Pr\u00f3ximas charlas",
+      "views":[
+         "talkHref.mustache",
+         "talkPages.mustache"
+      ],
+      "type":"list",
+      "comments":[true],
+      "controller":"querys/talks.php?q=after",
+      "innerName":"nextTalks"
+   },
+   {
+      "id":5,
+      "name":"queryer",
+      "views":["query.mustache"],
+      "type":"htmlTemplate",
+      "innerName":"queryer"
+   },
+   {
+      "id":6,
+      "name":"mapaLugar",
+      "views":["mapTpl.mustache"],
+      "type":"map",
+      "innerName":"Mapa del lugar",
+      "mapData" : {
+         "position":{"longitude":-34.58445,"latitude":-58.39801},
+         "zoom":17,
+         "polygons":[
+            {
+               "points": [
+                  {"longitude":-34.5845053, "latitude":-58.3984702},
+                  {"longitude":-34.584785, "latitude":-58.3981282},
+                  {"longitude":-34.5845133, "latitude":-58.3977805},
+                  {"longitude": -34.5843965, "latitude":-58.3976309},
+                  {"longitude": -34.584109, "latitude":-58.3979417},
+                  {"longitude": -34.5845053, "latitude":-58.3984702}
+               ],
+               "color": "green",
+               "fillColor": "#0f3",
+               "fillOpacity": 0.5
+            }
+         ],
+         "circles":[
+            {
+               "center":{"longitude":-34.5845133,  "latitude":-58.3977805},
+               "radius": 3,
+               "color": "red",
+               "fillColor": "#f03",
+               "fillOpacity": 0.5
+            }
+         ]
+      }
+   },
+   {
+      "id":7,
+      "name":"Acerca de...",
+      "type":"html",
+      "html":"",
+      "controller":null,
+      "innerName":"acercaDe"
+   }
+]

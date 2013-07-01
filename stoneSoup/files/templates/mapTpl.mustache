@@ -1,0 +1,30 @@
+<h3>Mapa del evento.</h3>
+
+<div id="map{{innerName}}" style="width:95%;height:250px"></div>
+<script type="text/javascript">
+	var map = L.map("map{{innerName}}");
+	L.tileLayer('http://{s}.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/997/256/{z}/{x}/{y}.png').addTo(map);
+	map.setView([ {{mapData.position.longitude}} , {{mapData.position.latitude}}], {{mapData.zoom}} );
+	{{#mapData.polygons}}
+		L.polygon([
+			{{#points}}
+				[{{longitude}},{{latitude}}],
+			{{/points}}
+		],
+		{
+		    color: '{{color}}',
+		    fillColor: '{{fillColor}}',
+		    fillOpacity: {{fillOpacity}}
+		}
+		).addTo(map);
+	{{/mapData.polygons}}
+
+	{{#mapData.circles}}
+		L.circle([{{center.longitude}},{{center.latitude}}], 2, {
+		    color: '{{color}}',
+		    fillColor: '{{fillColor}}',
+		    fillOpacity: {{fillOpacity}}
+		}).addTo(map);
+	{{/mapData.circles}}
+</script>
+<br />

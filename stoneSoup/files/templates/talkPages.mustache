@@ -1,0 +1,19 @@
+
+	<div data-role="page" id="talkPage{{id}}" group="{{group}}">
+		<div data-role="header" data-position="fixed">
+			<a href="#" data-rel="back" data-icon="arrow-l">Inicio</a> <h1>{{name}}</h1>
+		</div>
+		<div data-role="content">
+			<div id="main">
+				<h2>{{name}}</h2>
+				<h4>{{timeDateInit}} a {{timeDateFinish}}</h4>
+				<h4>{{place.name}}</h4>
+	    		<p>{{description}}</p>
+				</div>
+				<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="false" id="talkData">
+					<h4>Archivos adjuntos</h4>
+					<div id="talkData" ></div>
+				</div>
+			</div>
+		</div>
+	</div>

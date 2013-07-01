@@ -1,0 +1,144 @@
+[
+   {
+      "id":0,
+      "name":"Sala 1",
+      "talks":[
+		{
+            "name":"Mesa redonda: ¿Que medialunas te gustan?",
+            "timeDateInit":{
+               "date":"2013/07/01 04:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 04:59:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet2",
+            "id":1,
+            "dataUrls":""
+         },
+         {
+            "name":"Despertando con seguridad",
+            "timeDateInit":{
+               "date":"2013/07/01 05:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 06:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet",
+            "id":2,
+            "dataUrls":""
+         },
+         {
+            "name":"Minuto 1",
+            "timeDateInit":{
+               "date":"2013/07/01 07:01:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 09:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet2.1111",
+            "id":3,
+            "dataUrls":""
+         },
+         {
+            "name":"Hora 9",
+            "timeDateInit":{
+               "date":"2013/07/01 10:01:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 23:54:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"<b>Lorem</b> ipsum dolor sit amet2.1111",
+            "id":4,
+            "dataUrls":""
+         },
+         {
+            "name":"Hora 12",
+            "timeDateInit":{
+               "date":"2013/07/01 23:55:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 23:59:59",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet2.1111",
+            "id":5,
+            "dataUrls":""
+         }
+      ],
+      "urlPhoto":""
+   },
+   {
+      "id":1,
+      "name":"Sala 2",
+      "talks":[
+         {
+            "name":"YaSePaso",
+            "timeDateInit":{
+               "date":"2013/07/01 05:35:50",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 12:35:50",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet3",
+            "id":6,
+            "dataUrls":""
+         },
+         {
+            "name":"Almuerzo",
+            "timeDateInit":{
+               "date":"2013/07/01 14:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 20:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet4",
+            "id":7,
+            "dataUrls":""
+         },
+         {
+            "name":"Cena",
+            "timeDateInit":{
+               "date":"2013/07/01 21:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "timeDateFinish":{
+               "date":"2013/07/01 23:00:00",
+               "timezone_type":3,
+               "timezone":"America\/Argentina\/Buenos_Aires"
+            },
+            "description":"Lorem ipsum dolor sit amet4",
+            "id":8,
+            "dataUrls":""
+         }
+      ],
+      "urlPhoto":""
+   }
+]

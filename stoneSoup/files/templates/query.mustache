@@ -1,0 +1,18 @@
+<textarea id="{{innerName}}ABC" placeholder="Ingrese aquí su query" rows=10 cols=40>
+{
+	"type": "simple",
+	"operator": "(igual|mayor|menor|cantidad)",
+	"param1": "(salon|charla)",
+	"param2": "value",
+}
+</textarea>
+<button id="ok">Dale gas!</button>
+<p id="response"></p>
+<script type="text/javascript">
+	$("#ok").click(function(){
+		var q = {
+			query: JSON.parse($("#{{innerName}}ABC").val())
+		}
+		$("#response").load("querys/talks.php?q=query",q);
+	});
+</script>

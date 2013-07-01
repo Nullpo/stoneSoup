@@ -59,34 +59,34 @@ Ante cualquier duda, se puede probar aquí: http://jsonformatter.curiousconcept.
 
 Su formato es:
 
-   [                           # Listado de salas.
-   
-      {                        # Objeto "Sala" (Repetir una o más veces).
-         "id":0,                 # ID de la sala
-         "name":"Sala 1",        # Nombre de la sala
-         "talks":[               # Listado de Charlas que habrá en la sala 
-         
-         	{                     # Objeto "Charla" (Repetir cero o más veces)
-             "name":"Mesa redonda: ¿Que medialunas te gustan?",      # Nombre de la charla
-             "timeDateInit":{            
-                "date":"2013/07/01 04:00:00",                        # Fecha de inicio: YYYY/MM/dd hh:mm:ss
-                "timezone_type":3,                                   
-                "timezone":"America\/Argentina\/Buenos_Aires"
-             },
-             "timeDateFinish":{                                      # Fecha de finalización: YYYY/MM/dd hh:mm:ss
-                "date":"2013/07/01 04:59:00",
-                "timezone_type":3,
-                "timezone":"America\/Argentina\/Buenos_Aires"
-             },
-             "description":"Lorem ipsum dolor sit amet2",            # Descripción de la charla
-             "id":1,                                                 # ID de la charla
-             "dataUrls":""                                           # <future> URLs de archivos adjuntos.
-           }
-           
-         ]
-      }
-      
-   ]
+    [                           # Listado de salas.
+    
+       {                        # Objeto "Sala" (Repetir una o más veces).
+          "id":0,                 # ID de la sala
+          "name":"Sala 1",        # Nombre de la sala
+          "talks":[               # Listado de Charlas que habrá en la sala 
+          
+          	{                     # Objeto "Charla" (Repetir cero o más veces)
+              "name":"Mesa redonda: ¿Que medialunas te gustan?",      # Nombre de la charla
+              "timeDateInit":{            
+                 "date":"2013/07/01 04:00:00",                        # Fecha de inicio: YYYY/MM/dd hh:mm:ss
+                 "timezone_type":3,                                   
+                 "timezone":"America\/Argentina\/Buenos_Aires"
+              },
+              "timeDateFinish":{                                      # Fecha de finalización: YYYY/MM/dd hh:mm:ss
+                 "date":"2013/07/01 04:59:00",
+                 "timezone_type":3,
+                 "timezone":"America\/Argentina\/Buenos_Aires"
+              },
+              "description":"Lorem ipsum dolor sit amet2",            # Descripción de la charla
+              "id":1,                                                 # ID de la charla
+              "dataUrls":""                                           # <future> URLs de archivos adjuntos.
+            }
+            
+          ]
+       }
+       
+    ] 
 
 
 El archivo sections.json posée las diferentes secciónes que tiene la pantalla principal. 
@@ -107,43 +107,43 @@ que posea
  
 El campo "mapData" es un objeto que tiene el siguiente formato:
 
-   "mapData" : {
-      "position":{
-         "longitude": <float: Longitud del punto central>,
-         "latitude": <float: Latitud del punto central>,
-       },
-      "zoom": <int: nivel de zoom>,
-      "polygons":[         #Listado de Poligonos a dibujar
-      
-         {                 #Repetir cero o más veces.
-            "points": [
-               {"longitude":-34.5845053, "latitude":-58.3984702},    #
-               {"longitude":-34.584785, "latitude":-58.3981282},     # Puntos
-               {"longitude":-34.5845133, "latitude":-58.3977805},    # Del
-               {"longitude": -34.5843965, "latitude":-58.3976309},   # Poligono
-               {"longitude": -34.584109, "latitude":-58.3979417},    #
-               {"longitude": -34.5845053, "latitude":-58.3984702}    #
-            ],
-            "color": "green",
-            "fillColor": "#0f3",
-            "fillOpacity": 0.5
-         }
-         
-      ],
-      "circles":[      # Listado de circulos a dibujar (Util para señalar la entrada)
-         {             # Repetir cero o más veces
-            "center":{
-               "longitude":<float:Longitud del punto central>,  
-               "latitude":<float:Latitud del punto central>
-            },
-            "radius": 3,
-            "color": "red",
-            "fillColor": "#f03",
-            "fillOpacity": 0.5
-         }
-      ]
-   }
- 
+    "mapData" : {
+       "position":{
+          "longitude": <float: Longitud del punto central>,
+          "latitude": <float: Latitud del punto central>,
+        },
+       "zoom": <int: nivel de zoom>,
+       "polygons":[         #Listado de Poligonos a dibujar
+       
+          {                 #Repetir cero o más veces.
+             "points": [
+                {"longitude":-34.5845053, "latitude":-58.3984702},    #
+                {"longitude":-34.584785, "latitude":-58.3981282},     # Puntos
+                {"longitude":-34.5845133, "latitude":-58.3977805},    # Del
+                {"longitude": -34.5843965, "latitude":-58.3976309},   # Poligono
+                {"longitude": -34.584109, "latitude":-58.3979417},    #
+                {"longitude": -34.5845053, "latitude":-58.3984702}    #
+             ],
+             "color": "green",
+             "fillColor": "#0f3",
+             "fillOpacity": 0.5
+          }
+          
+       ],
+       "circles":[      # Listado de circulos a dibujar (Util para señalar la entrada)
+          {             # Repetir cero o más veces
+             "center":{
+                "longitude":<float:Longitud del punto central>,  
+                "latitude":<float:Latitud del punto central>
+             },
+             "radius": 3,
+             "color": "red",
+             "fillColor": "#f03",
+             "fillOpacity": 0.5
+          }
+       ]
+    }
+  
 
 
 
